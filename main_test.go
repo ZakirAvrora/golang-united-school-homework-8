@@ -7,8 +7,10 @@ import (
 	"testing"
 )
 
-const fileName = "test.json"
-const filePermission = 0644
+const (
+	fileName       = "test.json"
+	filePermission = 0o644
+)
 
 // Common validation tests
 func TestOperationMissingError(t *testing.T) {
